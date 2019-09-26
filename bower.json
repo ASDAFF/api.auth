@@ -1,0 +1,13 @@
+{
+  "name": "api.auth",
+  "version": "1.8.1",
+  "main": "",
+  "ignore": [
+    "source",
+    ".gitignore",
+    ".idea",
+    "bower.json",
+    "gulpfile.js",
+    "package.json"
+  ]
+}
