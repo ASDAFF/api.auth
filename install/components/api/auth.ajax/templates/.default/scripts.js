@@ -17,7 +17,7 @@
 				};
 				$.fn.apiModal('init',modalOptions);
 
-				//Запускает модальное окно
+				//Р—Р°РїСѓСЃРєР°РµС‚ РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ
 				$(document).on('click', options.authId + ' >.api_link', function (e) {
 
 					$(options.modalId).find($(this).attr('href')).show().siblings().hide();
