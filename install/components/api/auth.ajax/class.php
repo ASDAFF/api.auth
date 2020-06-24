@@ -42,7 +42,7 @@ class ApiAuthAjaxComponent extends \CBitrixComponent
 			Loc::loadMessages($_SERVER['DOCUMENT_ROOT'] . $this->getTemplate()->GetFile());
 		}
 
-		//Заголовки модального окна по умолчанию
+		//Р—Р°РіРѕР»РѕРІРєРё РјРѕРґР°Р»СЊРЅРѕРіРѕ РѕРєРЅР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 		$params['LOGIN_MESS_HEADER']    = ($params['LOGIN_MESS_HEADER'] ? $params['LOGIN_MESS_HEADER'] : Loc::getMessage('AAAP_LOGIN_MESS_HEADER'));
 		$params['REGISTER_MESS_HEADER'] = ($params['REGISTER_MESS_HEADER'] ? $params['REGISTER_MESS_HEADER'] : Loc::getMessage('AAAP_REGISTER_MESS_HEADER'));
 		$params['RESTORE_MESS_HEADER']  = ($params['RESTORE_MESS_HEADER'] ? $params['RESTORE_MESS_HEADER'] : Loc::getMessage('AAAP_RESTORE_MESS_HEADER'));
