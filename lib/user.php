@@ -11,7 +11,7 @@ Loc::loadMessages(__FILE__);
 class User
 {
 
-	//Аналог: $USER->SendPassword($arUser['LOGIN'], $arUser['EMAIL'], SITE_ID);
+	//РђРЅР°Р»РѕРі: $USER->SendPassword($arUser['LOGIN'], $arUser['EMAIL'], SITE_ID);
 	/**
 	 * @param        LOGIN
 	 * @param        EMAIL
@@ -135,7 +135,7 @@ class User
 	}
 
 
-	//Аналог: $USER->ChangePassword()
+	//РђРЅР°Р»РѕРі: $USER->ChangePassword()
 
 	/**
 	 * @param        $LOGIN
@@ -255,7 +255,7 @@ class User
 				);
 
 
-			//Отправит пароль на почту после смены
+			//РћС‚РїСЂР°РІРёС‚ РїР°СЂРѕР»СЊ РЅР° РїРѕС‡С‚Сѓ РїРѕСЃР»Рµ СЃРјРµРЅС‹
 			static::SendUserInfo(
 				 $ID,
 				 $arParams,

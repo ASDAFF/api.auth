@@ -44,7 +44,7 @@ class ApiAuthComponent extends \CBitrixComponent
 
 		$params['ALLOW_NEW_USER_REGISTRATION'] = (Option::get('main', 'new_user_registration', 'Y') != 'N' ? 'Y' : 'N');
 
-		//Все настройки модуля
+		//Р’СЃРµ РЅР°СЃС‚СЂРѕР№РєРё РјРѕРґСѓР»СЏ
 		/*if($arSettings = Settings::getAll()) {
 			$params = array_merge($params, $arSettings);
 		}*/

@@ -50,7 +50,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 			Loc::loadMessages($_SERVER['DOCUMENT_ROOT'] . $this->getTemplate()->GetFile());
 		}
 
-		//Âñå íàñòðîéêè ìîäóëÿ
+		//Ð’ÑÐµ Ð½Ð°ÑÑ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð¼Ð¾Ð´ÑƒÐ»Ñ
 		if($arSettings = Settings::getAll()) {
 			$params = array_merge($params, $arSettings);
 		}
@@ -101,7 +101,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		$bShowPassword = ($arParams['SHOW_FIELDS'] && in_array('PASSWORD', $arParams['SHOW_FIELDS']));
 
 
-		//---------- Áåçîïàñíàÿ àâòîðèçàöèÿ ----------//
+		//---------- Ð‘ÐµÐ·Ð¾Ð¿Ð°ÑÐ½Ð°Ñ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸Ñ ----------//
 		$arResult['SECURE_AUTH'] = false;
 		$arResult['SECURE_DATA'] = array();
 		if($bShowPassword && Option::get('main', 'use_encrypted_auth', 'N') == 'Y') //!CMain::IsHTTPS() &&
@@ -115,7 +115,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Ñîöèàëüíûå ñåðâèñû ----------//
+		//---------- Ð¡Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÑÐµÑ€Ð²Ð¸ÑÑ‹ ----------//
 		$arResult['AUTH_SERVICES']   = false;
 		$arResult['CURRENT_SERVICE'] = false;
 		if($arParams["ALLOW_SOCSERV_AUTHORIZATION"] == 'Y' && !$USER->IsAuthorized() && Loader::includeModule('socialservices')) {
@@ -139,7 +139,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Ãðóïïû ïîëüçîâàòåëåé ----------//
+		//---------- Ð“Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÐµÐ¹ ----------//
 		$arResult['GROUP_ID'] = array();
 		if($arParams['GROUP_ID']) {
 
@@ -155,7 +155,7 @@ class ApiAuthRegisterComponent extends \CBitrixComponent
 		}
 
 
-		//---------- Ïîëüçîâàòåëüñêèå äîï. ïîëÿ ----------//
+		//---------- ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ðµ Ð´Ð¾Ð¿. Ð¿Ð¾Ð»Ñ ----------//
 		$arResult['USER_FIELDS'] = array();
 		if($arParams['USER_FIELDS']){
 			$arUserFields = $USER_FIELD_MANAGER->GetUserFields("USER", 0, LANGUAGE_ID);

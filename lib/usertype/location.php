@@ -140,7 +140,7 @@ class Location
 			$code = trim($arUserField['VALUE']);
 			$lang = LANGUAGE_ID;
 
-			//Вернет полный адрес
+			//Р’РµСЂРЅРµС‚ РїРѕР»РЅС‹Р№ Р°РґСЂРµСЃ
 			$arLocations = \Bitrix\Sale\Location\LocationTable::getList(array(
 				 'filter' => array(
 						'=CODE'                          => $code,
