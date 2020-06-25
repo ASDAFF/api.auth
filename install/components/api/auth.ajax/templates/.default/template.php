@@ -37,7 +37,10 @@ if(method_exists($this, 'setFrameMode'))
 $formId = $arResult['FORM_ID'];
 
 $this->addExternalCss($templateFolder . '/styles.css');
+$this->addExternalCss($templateFolder . '/form.css');
+$this->addExternalCss($templateFolder . '/modal.css');
 $this->addExternalJs($templateFolder . '/scripts.js');
+$this->addExternalJs($templateFolder . '/modal.js');
 
 if($arParams) {
 	foreach($arParams as $key => $val) {
