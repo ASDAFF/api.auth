@@ -32,6 +32,7 @@ Loc::loadMessages(__FILE__);
 if(method_exists($this, 'setFrameMode'))
 	$this->setFrameMode(true);
 
+$this->addExternalCss($templateFolder . '/form.css');
 $this->addExternalCss($templateFolder . '/styles.css');
 $request = Application::getInstance()->getContext()->getRequest();
 ?>
